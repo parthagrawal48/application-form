@@ -44,7 +44,7 @@
       message: form.message.value
     };
 
-    const res = await fetch('http://localhost:8080/submit', {
+    const res = await fetch('https://application-form-oiq2.onrender.com/api/form/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
